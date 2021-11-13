@@ -1,0 +1,15 @@
+<div>
+  <h2>Details</h2>
+  <table>
+    <tr>
+      <th>Sl. No</th>
+      <th>Name</th>
+      <th>Details</th>
+    </tr>
+    <tr *ngFor="let t of tasks">
+      <td>{{t.id}}</td>
+      <td>{{t.name}}</td>
+      <td>{{t.details}}</td>
+    </tr>
+  </table>
+</div>

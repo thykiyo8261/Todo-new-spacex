@@ -1,0 +1,35 @@
+<div style="text-align:center">
+    <h1>
+      SpaceX Mission Data
+    </h1>
+    <button (click)="getData()">Fetch Data</button>
+   </div>
+
+
+   <div style="text-align:center">
+
+    <table *ngIf="data">
+        <tr>
+            <th>Mission Name</th>
+            <th>Mission ID</th>
+            <th>manufacturers</th>
+            <th>payload_ids</th>
+            <th>wikipedia</th>
+            <th>website</th>
+            <th>twitter</th>
+            <th>description</th>
+        </tr>
+    
+        <tr *ngFor="let data of data">
+            <td>{{data.mission_name}}</td>
+            <td>{{data.mission_id}}</td>
+            <td>{{data.manufacturers}}</td>
+            <td>{{data.payload_ids}}</td>
+            <td>{{data.wikipedia}}</td>
+            <td>{{data.website}}</td>
+            <td>{{data.twitter}}</td>
+            <td>{{data.description}}</td>
+        </tr>
+    </table>
+    </div>
+    
